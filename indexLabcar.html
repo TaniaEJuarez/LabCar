@@ -8,102 +8,126 @@
     <link rel="stylesheet" href="styleLabcar.css">
 </head>
 
-<body>
+<body class="body-lb">
+    <div class="container"> 
 
-    <header>
-        <a href="section-hero">
-            <img src="img/logo.png" alt="HTML tutorial" style="width:100;height:35px;border:0">
-        </a>
-        <ul class="topnav">
-                <!--<li><a class="active" href="#home">Home</a></li>-->
-                <li><a href="section-rate">Viaja</a></li>
-                <li><a href="section-driver">Conduce</a></li>
-                <li><a href="section-driver">inicia Sesión</a></li>
-        </ul>
-    </header>
+        <header>
+            <a href="section-hero">
+                <img src="img/logo.png" alt="HTML tutorial" style="width:100;height:35px;border:0">
+            </a>
+            <ul class="topnav">
+                    <li><a href="#"><span id="button-nav-travel" class=""></span>Viaja</a></li>   
+                    <li><a href="section-driver" id="button-nav-drive" class="">Conduce</a></li>
+                    <li><a href="#" id="button-nav-login" class="">Inicia Sesión</a></li>
+            </ul>
 
-    <section id="section-hero" class="hero">
-        <div class="box-hero">
+            <!-- The Modal -->
+            <div id='my-modal-login' class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <span class="close-login">&times;</span>
+                    <img src="img/usuario-sin-foto.png" style="width:180;height:85px;border:0">
+                    </div>
+                    <div class="modal-body">
+                        <form name="login">
+                            <input type="user" id="username" placeholder="Username">
+                            <input type="pass" id="password" placeholder="Password">
+                            <input type="submit" value="LOGIN">
+                            <input type="reset" value="RESET">
+                            <p>Forgot password?</p> <p><a href="">Click here</a></p>
+                        </form>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+
+        <section id="section-hero" class="section-hero">
+            <div class="box-hero">
+                    <h1>Disfruta del viaje <br>
+                            Eres dueño de tu tiempo</h1> <br><br>
+                    <h4>Viaja con</h4><img src="img/logo-blanco.png"> <br>
+                    <button id="btn-signup">Regístrate</button><br><br><br>
+                    <hr><p>O bien</p><hr><br><br><br>
+                    <button type="button" id="btn-driver">Conviértete en conductor</button>
+            </div>
+        </section>
+
+
+        <section id="section-info" class="info">
             <main>
-                <h1>Disfruta del viaje <br>
-                        Eres dueño de tu tiempo</h1> <br><br>
-                <h4>Viaja con</h4><img src="img/logo-blanco.png"> <br>
-                <button type="button" id="btn-signup">Regístrate</button><br><br><br>
-                <hr><p>O bien</p><hr><br><br><br>
+                <h2>Descarga la nueva app</h2>
+                <p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+                <p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
+            </main>
+        </section>
+
+
+        <section id="section-driver" class="driver">
+            <main>
+                <h2>Conduce cuando quieras</h2>
+                <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p><br>
                 <button type="button" id="btn-driver">Conviértete en conductor</button>
             </main>
-        </div>
-    </section>
-
-
-    <section id="section-info" class="info">
-        <main>
-            <h2>Descarga la nueva app</h2>
-            <p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
-            <p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
-        </main>
-    </section>
-
-
-    <section id="section-driver" class="driver">
-        <main>
-            <h2>Conduce cuando quieras</h2>
-            <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p><br>
-            <button type="button" id="btn-driver">Conviértete en conductor</button>
-        </main>
-    </section>
+        </section>
 
 
 
-    <section id="section-rate" class="rate">
-        <main>
-            <h2>Tarifas</h2>
-            <p>Consulta las tarifas LabCar aquí</p><br>
-            <form>
-                    <label for="route-start"></label><img src="img/circulo.png">
-                    <input type="start" id="route-start" placeholder="Ingrese punto de partida" name="route-start" required/><br><br><br>
-                    <label for="route-destiny"></label><img src="img/flecha.png">
-                    <input type="destiny" id="route-destiny" placeholder="Ingrese su destino" name="route-destiny" required/><br><br><br>
-                    <button type="button" id="btn-route">¡Trazar ruta!</button>
-            </form>
-        </main>
-    </section>
-    
+        <section id="section-rate" class="rate">
+            <main>
+                <h2>Tarifas</h2>
+                <p>Consulta las tarifas LabCar aquí</p><br>
+                <form>
+                        <label for="route-start"></label><img src="img/circulo.png">
+                        <input type="start" id="route-start" placeholder="Ingrese punto de partida" name="route-start" required/><br><br><br>
+                        <label for="route-destiny"></label><img src="img/flecha.png">
+                        <input type="destiny" id="route-destiny" placeholder="Ingrese su destino" name="route-destiny" required/><br><br><br>
+                        <button type="button" id="btn-route">¡Trazar ruta!</button>
+                </form>
+            </main>
+        </section>
+        
 
 
-    <footer>
-            <img src="img/logo-blanco.png"><br><hr>
-            <ul style="list-style-type:none;">
-                <li>Viaja</li>
-                <li>Conduce</li>
-                <li>Ciudades</li>
-                <li>Tarifas</li>
-                <li>Entregas</li>
-                <li>Cómo funciona</li>
-                <li>Países</li>
-                <li>Seguridad</li>
-                <li>Oportunidades</li>
-                <li>Nuestra historia</li>
-                <li>API de LabCar</li>
-                <li>Eventos</li>
-                <li>Desarrolladores</li>
-                <li>Servicios</li>
-                <li>Laboratoria</li>
-                <li>Coders</li>
-            </ul> 
-            <img src="img/facebook.png" style ="width:70;height:15px;border:30">
-            <img src="img/twitter.png"style ="width:10;height:15px;border:30">
-            <img src="img/linkedin.png"style ="width:40;height:15px;border:30">
-            <img src="img/apple.png"style ="width:40;height:15px;border:30">
-            <img src="img/play.png"style ="width:40;height:15px;border:30">
-            <img src="img/app-store.png"style ="width:100;height:35px;border:30">
-            <img src="img/google-play.png"style ="width:100;height:35px;border:30">
-            <br>
-            <hr>
-            <p>© 2017 LabCar technologies Inc. </p>
-    </footer>
+        <footer>
+                <img src="img/logo-blanco.png"><br><hr>
+                <ul style="list-style-type:none;">
+                    <li>Viaja</li>
+                    <li>Conduce</li>
+                    <li>Ciudades</li>
+                    <li>Tarifas</li>
+                    <li>Entregas</li>
+                    <li>Cómo funciona</li>
+                    <li>Países</li>
+                    <li>Seguridad</li>
+                    <li>Oportunidades</li>
+                    <li>Nuestra historia</li>
+                    <li>API de LabCar</li>
+                    <li>Eventos</li>
+                    <li>Desarrolladores</li>
+                    <li>Servicios</li>
+                    <li>Laboratoria</li>
+                    <li>Coders</li>
+                </ul> 
+                <img src="img/facebook.png" style ="width:70;height:15px;border:30">
+                <img src="img/twitter.png"style ="width:10;height:15px;border:30">
+                <img src="img/linkedin.png"style ="width:40;height:15px;border:30">
+                <img src="img/apple.png"style ="width:40;height:15px;border:30">
+                <img src="img/play.png"style ="width:40;height:15px;border:30">
+                <img src="img/app-store.png"style ="width:100;height:35px;border:30">
+                <img src="img/google-play.png"style ="width:100;height:35px;border:30">
+                <br>
+                <hr>
+                <p>© 2017 LabCar technologies Inc. </p>
+        </footer>
 
-
+    </div>    
 
     <script src="appLabcar.js"></script>
 </body>
