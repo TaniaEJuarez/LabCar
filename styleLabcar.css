@@ -1,0 +1,99 @@
+/* @font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?lwlfc0');
+    src:  url('../fonts/icomoon.eot?lwlfc0#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?lwlfc0') format('truetype'),
+      url('../fonts/icomoon.woff?lwlfc0') format('woff'),
+      url('../fonts/icomoon.svg?lwlfc0#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    /*font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+   /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-play3:before {
+    content: "\ea1c";
+  }
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  .icon-appleinc:before {
+    content: "\eabe";
+  }
+  .icon-linkedin2:before {
+    content: "\eaca";
+  } */
+
+  body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+  
+ /* .menu-nav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 320px) {
+    .menu-nav a:not(:first-child) {display: none;}
+    .menu-nav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .menu-nav.responsive {position: relative;}
+    .menu-nav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .menu-nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  } */
+

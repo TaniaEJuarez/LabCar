@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Labcar</title>
+    <link rel="stylesheet" href="styleLabcar.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="section-hero">
+            <img src="img/logo.png" alt="HTML tutorial" style="width:100;height:35px;border:0">
+        </a>
+        <ul class="topnav">
+                <!--<li><a class="active" href="#home">Home</a></li>-->
+                <li><a href="section-rate">Viaja</a></li>
+                <li><a href="section-driver">Conduce</a></li>
+                <li><a href="section-driver">inicia Sesión</a></li>
+        </ul>
+    </header>
+
+    <section id="section-hero" class="hero">
+        <div class="box-hero">
+            <main>
+                <h1>Disfruta del viaje <br>
+                        Eres dueño de tu tiempo</h1> <br><br>
+                <h4>Viaja con</h4><img src="img/logo-blanco.png"> <br>
+                <button type="button" id="btn-signup">Regístrate</button><br><br><br>
+                <hr><p>O bien</p><hr><br><br><br>
+                <button type="button" id="btn-driver">Conviértete en conductor</button>
+            </main>
+        </div>
+    </section>
+
+
+    <section id="section-info" class="info">
+        <main>
+            <h2>Descarga la nueva app</h2>
+            <p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+            <p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
+        </main>
+    </section>
+
+
+    <section id="section-driver" class="driver">
+        <main>
+            <h2>Conduce cuando quieras</h2>
+            <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p><br>
+            <button type="button" id="btn-driver">Conviértete en conductor</button>
+        </main>
+    </section>
+
+
+
+    <section id="section-rate" class="rate">
+        <main>
+            <h2>Tarifas</h2>
+            <p>Consulta las tarifas LabCar aquí</p><br>
+            <form>
+                    <label for="route-start"></label><img src="img/circulo.png">
+                    <input type="start" id="route-start" placeholder="Ingrese punto de partida" name="route-start" required/><br><br><br>
+                    <label for="route-destiny"></label><img src="img/flecha.png">
+                    <input type="destiny" id="route-destiny" placeholder="Ingrese su destino" name="route-destiny" required/><br><br><br>
+                    <button type="button" id="btn-route">¡Trazar ruta!</button>
+            </form>
+        </main>
+    </section>
+    
+
+
+    <footer>
+            <img src="img/logo-blanco.png"><br><hr>
+            <ul style="list-style-type:none;">
+                <li>Viaja</li>
+                <li>Conduce</li>
+                <li>Ciudades</li>
+                <li>Tarifas</li>
+                <li>Entregas</li>
+                <li>Cómo funciona</li>
+                <li>Países</li>
+                <li>Seguridad</li>
+                <li>Oportunidades</li>
+                <li>Nuestra historia</li>
+                <li>API de LabCar</li>
+                <li>Eventos</li>
+                <li>Desarrolladores</li>
+                <li>Servicios</li>
+                <li>Laboratoria</li>
+                <li>Coders</li>
+            </ul> 
+            <img src="img/facebook.png" style ="width:70;height:15px;border:30">
+            <img src="img/twitter.png"style ="width:10;height:15px;border:30">
+            <img src="img/linkedin.png"style ="width:40;height:15px;border:30">
+            <img src="img/apple.png"style ="width:40;height:15px;border:30">
+            <img src="img/play.png"style ="width:40;height:15px;border:30">
+            <img src="img/app-store.png"style ="width:100;height:35px;border:30">
+            <img src="img/google-play.png"style ="width:100;height:35px;border:30">
+            <br>
+            <hr>
+            <p>© 2017 LabCar technologies Inc. </p>
+    </footer>
+
+
+
+    <script src="appLabcar.js"></script>
+</body>
+</html>
