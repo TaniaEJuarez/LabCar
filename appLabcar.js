@@ -1,11 +1,11 @@
 
-//Variables de botones//
+// Variables  buttons//
 const buttonTravel = document.getElementById('button-nav-travel');
 const buttonDrive = document.getElementById('button-nav-drive');
 const buttonLogin = document.getElementById('button-nav-login');
 const buttonSignup = document.getElementById('btn-signup');
 
-// Variables para mostrar secciones //
+// Variables to show sections //
 const sectionHero = document.getElementById('section-hero');
 const sectionInformation = document.getElementById('section-info');
 const sectionDrive = document.getElementById('section-driver');
@@ -43,7 +43,7 @@ window.onclick = function(event) {
 
 
 
-//Crear funciones que manipulen las secciones//
+//functions that go to sections//
 buttonNavRate.addEventListener('click', () => {
   sectionRate.classList.remove('hide');
   sectionHero.classList.add('hide');

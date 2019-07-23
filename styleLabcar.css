@@ -46,18 +46,38 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
   } */
+ 
 
-  #section-hero {
-    background-image: url("img/taxi.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 0px;
-    background-attachment: scroll;
-    background-size: cover;
-  }
+  /*body {
+    background: 
+    color:
+    font family:
+  }*/
 
+.container{
+    display: grid;
+    grid-gap: 5px;
+}
   
-  ul.topnav {
+h1, h2, h3, p {
+    color: white;
+ }
+
+#section-hero {
+  background-image: url("img/taxi.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0px;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.info, .rate {
+  background: #f7b617;
+  border-radius: 4px;
+}
+
+ul.topnav {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -86,6 +106,7 @@ ul.topnav li.right {float: right;}
   ul.topnav li {float: none;}
 }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -102,6 +123,7 @@ ul.topnav li.right {float: right;}
   align-content: center;
 }
 
+
 /* Modal Content */
 .modal-content {
   position: relative;
@@ -117,6 +139,7 @@ ul.topnav li.right {float: right;}
   animation-duration: 0.4s
 }
 
+
 /* Add Animation */
 @-webkit-keyframes animatetop {
   from {top:-300px; opacity:0} 
@@ -127,6 +150,7 @@ ul.topnav li.right {float: right;}
   from {top:-300px; opacity:0}
   to {top:0; opacity:1}
 }
+
 
 /* The Close Button */
 .close {
@@ -153,14 +177,29 @@ ul.topnav li.right {float: right;}
 .modal-body {padding: 2px 16px;}
 }
 
-.box-hero {
-  position: relative;
-  width: 40px;
-  height: 20px;
-  right: 0;
-  border: 3px solid white;
-} 
 
+/* Driver section style */
+#section-driver {
+  background-image: url("img/conduce.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0px;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+
+/* Footer section style  */
+.footer {
+    background: #2b2b2b;
+    border-radius: 4px;
+    color: white;
+  }
+
+  .footer-list {
+    color: white;
+    grid-auto-columns: repeat(2, 1fr);
+  }
 
 
  /* .menu-nav .icon {
