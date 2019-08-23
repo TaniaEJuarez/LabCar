@@ -4,78 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Labcar</title>
     <link rel="stylesheet" href="styleLabcar.css">
+    <title>LabCar</title>
 </head>
-
-<body class="body-lb">
-    <div class="container"> 
-
-        <header>
+<body>
+    <div class="conteiner">
+        <header class="header">
             <a href="section-hero">
                 <img src="img/logo.png" alt="HTML tutorial" style="width:100;height:35px;border:0">
             </a>
             <ul class="topnav">
-                    <li><a href="#"><span id="button-nav-travel" class=""></span>Viaja</a></li>   
-                    <li><a href="section-driver" id="button-nav-drive" class="">Conduce</a></li>
-                    <li><a href="#" id="button-nav-login" class="">Inicia Sesión</a></li>
+                <li><a href="#"><span id="button-nav-travel" class=""></span>Viaja</a></li>   
+                <li><a href="section-driver" id="button-nav-drive" class="">Conduce</a></li>
+                <li><a href="#" id="button-nav-login" class="">Inicia Sesión</a></li>
             </ul>
-
-            <!-- The Modal -->
-            <div id='my-modal-login' class="modal">
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <span class="close-login">&times;</span>
-                    <img src="img/usuario-sin-foto.png" style="width:180;height:85px;border:0">
-                    </div>
-                    <div class="modal-body">
-                        <form name="login">
-                            <input type="user" id="username" placeholder="Username">
-                            <input type="pass" id="password" placeholder="Password">
-                            <input type="submit" value="LOGIN">
-                            <input type="reset" value="RESET">
-                            <p>Forgot password?</p> <p><a href="">Click here</a></p>
-                        </form>
-                    </div>
-                </div>
-            </div>
         </header>
+        
+        <main class="content">
+            <!--<h1>* CONTENIDO *</h1>-->
+        </main>
 
+        <aside class="sidebar">
+            <!--<h3>* SIDEBAR *</h3>-->
+            <h1>Disfruta del viaje <br>
+                Eres dueño de tu tiempo</h1> <br><br>
+            <h4>Viaja con</h4><br><img src="img/logo-blanco.png"> <br><br>
+            <button id="btn-signup">Regístrate</button><br><br>
+            <hr><p>O bien</p><hr><br>
+            <button type="button" id="btn-driver">Conviértete en conductor</button>
+        </aside>
 
-        <section id="section-hero" class="section-hero">
-            <div id="box-hero"class="box-hero">
-                    <h1>Disfruta del viaje <br>
-                            Eres dueño de tu tiempo</h1> <br><br>
-                    <h4>Viaja con</h4><img src="img/logo-blanco.png"> <br>
-                    <button id="btn-signup">Regístrate</button><br><br><br>
-                    <hr><p>O bien</p><hr><br><br><br>
-                    <button type="button" id="btn-driver">Conviértete en conductor</button>
-            </div>
-        </section>
+        <div class="widget-1">
+            <!--<h3>* WIDGET 1 *</h3>-->
+            <img src="img/celular.png"  width="160" height="190" aling="center" alt="">
+        </div>
 
+        <div class="widget-2">
+            <!--<h3>* WIDGET 2 *</h3>-->
+            <h2>Descarga la nueva app</h2> <br>
+                <p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p> <br>
+                <p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p> <br>
+        </div>
+        
+        <div class="driver-1">
+            <!--<h3>* DRIVER 1 *</h3>-->
+        </div>
 
-        <section id="section-info" class="info">
-            <main>
-                <h2>Descarga la nueva app</h2>
-                <p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
-                <p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
-            </main>
-        </section>
-
-
-        <section id="section-driver" class="driver">
-            <main>
-                <h2>Conduce cuando quieras</h2>
+        <div class="driver-2">
+            <!-- <h3>* DRIVER 2 *</h3> -->
+            <h2>Conduce cuando quieras</h2> <br>
                 <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p><br>
                 <button type="button" id="btn-driver">Conviértete en conductor</button>
-            </main>
-        </section>
+        </div>
 
-
-
-        <section id="section-rate" class="rate">
-            <main>
+        <div class="rate-1">
+                <!-- <h3>* RATE 1 *</h3> -->
                 <h2>Tarifas</h2>
                 <p>Consulta las tarifas LabCar aquí</p><br>
                 <form>
@@ -83,47 +66,96 @@
                         <input type="start" id="route-start" placeholder="Ingrese punto de partida" name="route-start" required/><br><br><br>
                         <label for="route-destiny"></label><img src="img/flecha.png">
                         <input type="destiny" id="route-destiny" placeholder="Ingrese su destino" name="route-destiny" required/><br><br><br>
-                        <button type="button" id="btn-route">¡Trazar ruta!</button>
+                        <!-- <button type="button" id="btn-route">¡Trazar ruta!</button> -->
+                        <button onclick="getLocation()"> ¡ Traza tu Ruta !</button>
                 </form>
-            </main>
-        </section>
-        
+        </div>
+
+        <div class="map" id="map">
+                <!-- <h3>* MAP *</h3> -->
+                <!-- <img src="https://maps.googleapis.com/maps/api/staticmap?center=
+                "+latlon+"&zoom=14&size=400x300&sensor=false&key=AIzaSyBLrwudy74IzHCa9ziNoONb7rLBuPaaQdI" alt=""> -->
+        </div>
 
 
-        <footer class="footer">
-                <img src="img/logo-blanco.png"><br><hr>
-                <ul class="footer-list" style="list-style-type:none;">
-                    <li><a href="url">Viaja</a></li>
-                    <li><a href="url">Conduce</a>
-                    <li><a href="url">Ciudades</a>
-                    <li><a href="url">Tarifas</a>
-                    <li><a href="url">Entregas</a>
-                    <li><a href="url">Cómo funciona</a>
-                    <li><a href="url">Países</a>
-                    <li><a href="url">Seguridad</a></li>
-                    <li><a href="url">Oportunidades</a></li>
-                    <li><a href="url">Nuestra historia</a></li>
-                    <li><a href="url">API de LabCar</a></li>
-                    <li><a href="url">Eventos</a></li>
-                    <li><a href="url">Desarrolladores</a></li>
-                    <li><a href="url">Servicios</a></li>
-                    <li><a href="https://www.laboratoria.la/">Laboratoria</a></li>
-                    <li><a href="url">Coders</a></li>
-                </ul> 
-                <img src="img/facebook.png" style ="width:70;height:15px;border:30">
-                <img src="img/twitter.png"style ="width:10;height:15px;border:30">
-                <img src="img/linkedin.png"style ="width:40;height:15px;border:30">
-                <img src="img/apple.png"style ="width:40;height:15px;border:30">
-                <img src="img/play.png"style ="width:40;height:15px;border:30">
-                <img src="img/app-store.png"style ="width:100;height:35px;border:30">
-                <img src="img/google-play.png"style ="width:100;height:35px;border:30">
-                <br>
-                <hr>
-                <p>© 2017 LabCar technologies Inc. </p>
+        <footer class="footer-1">
+            <!-- <h3>* FOOTER *</h3> -->
+            <img src="img/logo-blanco.png" style ="width:70;height:15px;border:30"><br><hr>
+            <img src="img/facebook.png" style ="width:45;height:10px;border:20">
+            <img src="img/twitter.png"style ="width:10;height:15px;border:30">
+            <img src="img/linkedin.png"style ="width:40;height:15px;border:30">
+            <img src="img/apple.png"style ="width:40;height:15px;border:30">
+            <img src="img/play.png"style ="width:40;height:15px;border:30">
+            <!-- <img src="img/app-store.png"style ="width:100;height:35px;border:30">
+            <img src="img/google-play.png"style ="width:100;height:35px;border:30"> -->
+            <br>
+            <hr>
+            <p>© 2017 LabCar technologies Inc. </p>
         </footer>
 
-    </div>    
+        <footer class="footer-list">
+                <!-- <h3>* FOOTER *</h3> -->
+                <ul class="footer-list-url" style="list-style-type:none;">
+                        <li><a href="url">Viaja</a></li>
+                        <li><a href="url">Conduce</a>
+                        <li><a href="url">Ciudades</a>
+                        <li><a href="url">Tarifas</a>
+                        <li><a href="url">Entregas</a>
+                        <li><a href="url">Cómo funciona</a>
+                        <li><a href="url">Países</a>
+                        <li><a href="url">Seguridad</a></li>
+                        <li><a href="url">Oportunidades</a></li>
+                        <li><a href="url">Nuestra historia</a></li>
+                        <li><a href="url">API de LabCar</a></li>
+                        <li><a href="url">Eventos</a></li>
+                        <li><a href="url">Desarrolladores</a></li>
+                        <li><a href="url">Servicios</a></li>
+                        <li><a href="https://www.laboratoria.la/">Laboratoria</a></li>
+                        <li><a href="url">Coders</a></li>
+                </ul> 
+        </footer>
 
-    <script src="appLabcar.js"></script>
+        <footer class="footer-3">
+                <!-- <h3>* FOOTER *</h3> -->
+            <ul>
+                <img src="img/app-store.png"style ="width:100;height:35px;border:30;aling:left">
+                <img src="img/google-play.png"style ="width:100;height:35px;border:30">
+            </ul>
+        </footer>
+        
+    </div>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLrwudy74IzHCa9ziNoONb7rLBuPaaQdI=initMap">
+    </script>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+function showPosition(position) {
+  var latlon = position.coords.latitude + "," + position.coords.longitude;
+
+  var img_url = "https://maps.googleapis.com/maps/api/staticmap?center=
+  "+latlon+"&zoom=14&size=400x300&sensor=false&key=AIzaSyBLrwudy74IzHCa9ziNoONb7rLBuPaaQdI";
+
+  document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+}
+</script>
+
+<script src="appLabcar.js"></script>
+
 </body>
 </html>
